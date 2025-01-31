@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pivot &mdash; Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      // Fetch the header HTML file
+      fetch('header.html')
+              .then(response => response.text())
+              .then(headerHtml => {
+                // Inject the header HTML into the header container
+                const headerContainer = document.getElementById('headerContainer');
+                headerContainer.innerHTML = headerHtml;
+              });
+
+      // Fetch the footer HTML file
+      fetch('footer.html')
+              .then(response => response.text())
+              .then(footerHtml => {
+                // Inject the footer HTML into the footer container
+                const footerContainer = document.getElementById('footerContainer');
+                footerContainer.innerHTML = footerHtml;
+              });
+    </script>
+
+  </head>
+  <body>
+
+  <header id="headerContainer"></header>
+    <section class="inner-page">
+      <div class="slider-item py-5" style="background-image: url('img/slider-1.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center text-center">
+            <div class="col-md-7 col-sm-12 element-animate">
+              <h1 class="text-white">Contact Us</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section style="margin-top: 2rem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" class="contact">
+            <div class="pl-5" style="display: flex">
+            <h5 class="text-uppercase mb-3">Address</h5>
+            <p class="mb-5 mt-5">SIRAJ ASSOCIATES<br>
+              Sunshine Valley, Adarsha School Road<br>
+              CSEZ PO, Thuthiyoor, Kakkanad,<br>
+              Kochi 682037
+            </p>
+              <p class="mb-5 mt-5 ml-5">SIRAJ ASSOCIATES<br>
+                19/31A, KOLLAMKUDIMUGAL,<br>
+                MUNDAMPALAM, KANGARAPADY,<br>
+                Ernakulam, 682021
+
+              </p>
+            </div>
+            <div class="pl-5">
+            <h5 class="text-uppercase mb-3">Email Us At</h5>
+            <p class="mb-5"><a href="mailto: jeyem.siraj@gmail.com"> jeyem.siraj@gmail.com</a></p>
+            </div>
+            <div class="pl-5">
+            <h5 class="text-uppercase mb-3">Call Us</h5>
+            <p class="mb-5">Phone: +91 86068 90111</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer id="footerContainer"></footer>
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
