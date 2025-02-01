@@ -155,7 +155,57 @@
 		} , { offset: '95%' } );
 	};
 	contentWayPoint();
+// Counter animation function
+document.addEventListener("DOMContentLoaded", function() {
+  // Intersection Observer to trigger counting when the section is in view
+  const counters = document.querySelectorAll('.counter');
+  const observerOptions = {
+      root: null, 
+      rootMargin: "0px", 
+      threshold: 0.5 // Start counting when 50% of the element is in view
+  };
 
+  // Function to count the numbers
+  const countUp = (element) => {
+      const target = +element.getAttribute('data-target');
+      let start = 0;
 
+      // Set the starting value based on the target value
+      if (target === 4000) start = 3900; // For Total Projects
+      else if (target === 2300) start = 2200; // For Residential
+      else if (target === 1700) start = 1600; // For Commercial
+
+      let count = start;
+      const speed = 200; // Duration for the animation (ms)
+      const increment = (target - start) / speed; // Calculate increment per frame
+
+      const interval = setInterval(() => {
+          count += increment;
+          if(count >= target) {
+              clearInterval(interval);
+              element.textContent = target + "+";
+          } else {
+              element.textContent = Math.floor(count) + "+";
+          }
+      }, 1);
+  };
+
+  // Intersection Observer Callback
+  const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+          if(entry.isIntersecting) {
+              countUp(entry.target);
+              observer.unobserve(entry.target); // Stop observing once counted
+          }
+      });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  // Observe all counters
+  counters.forEach(counter => {
+      observer.observe(counter);
+  });
+});
 
 })(jQuery);
