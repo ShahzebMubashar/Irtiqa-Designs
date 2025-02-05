@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -98,8 +100,8 @@
       </div>
     </section>
 
-    
-<!-- Project Counter Section -->
+
+    <!-- Project Counter Section -->
 <section class="section" id="projects">
   <div class="container">
     <div class="row justify-content-center mb-5 element-animate">
@@ -110,29 +112,29 @@
 
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-        <div class="media d-block media-feature text-center p-4 shadow-lg rounded bg-light">
-          <span class="flaticon-building-1 icon"></span>
+        <div class="media d-block media-feature text-center p-4 custom-box">
+          <img src="/img/total.png" alt="Project Icon" class="img-fluid custom-icon"> <!-- Replaced icon with image -->
           <div class="media-body">
-            <h2 id="total-projects" class="display-4 fw-bold counter text-primary" data-target="4000">3700+</h2>
-            <p class="h5 text-secondary">Total Projects</p>
+            <h2 id="total-projects" class="display-4 fw-bold counter text-primary custom-number" data-target="4000">3700+</h2>
+            <p class="h5 text-secondary custom-text">Total Projects</p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-        <div class="media d-block media-feature text-center p-4 shadow-lg rounded bg-light">
-          <span class="flaticon-building-1 icon"></span>
+        <div class="media d-block media-feature text-center p-4 custom-box">
+          <img src="/img/residential.png" alt="Project Icon" class="img-fluid custom-icon"> <!-- Replaced icon with image -->
           <div class="media-body">
-            <h2 id="residential" class="display-4 fw-bold counter text-primary" data-target="2300">2000+</h2>
-            <p class="h5 text-secondary">Residential</p>
+            <h2 id="residential" class="display-4 fw-bold counter text-primary custom-number" data-target="2300">2000+</h2>
+            <p class="h5 text-secondary custom-text">Residential</p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-        <div class="media d-block media-feature text-center p-4 shadow-lg rounded bg-light">
-          <span class="flaticon-building-1 icon"></span>
+        <div class="media d-block media-feature text-center p-4 custom-box">
+          <img src="/img/commercial.png" alt="Project Icon" class="img-fluid custom-icon"> <!-- Replaced icon with image -->
           <div class="media-body">
-            <h2 id="commercial" class="display-4 fw-bold counter text-primary" data-target="1700">1400+</h2>
-            <p class="h5 text-secondary">Commercial</p>
+            <h2 id="commercial" class="display-4 fw-bold counter text-primary custom-number" data-target="1700">1400+</h2>
+            <p class="h5 text-secondary custom-text">Commercial</p>
           </div>
         </div>
       </div>
@@ -140,10 +142,47 @@
   </div>
 </section>
 
+<style>
+  /* Custom Styles */
+  .custom-box {
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    border-radius: 15px; 
+  }
+
+  /* To ensure a good effect on hover */
+  .custom-box:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+  }
+
+  /* Custom size for image */
+  .custom-icon {
+    max-width: 30%; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+
+  /* Custom size for the numbers */
+  .custom-number {
+    font-size: 3.5rem; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+  }
+
+  /* Custom size for the text */
+  .custom-text {
+    font-size: 1.25rem; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+  }
+</style>
+
+
+
 
   
 <!-- Cities Served Section -->
-<section class="section" id="cities-served">
+<section class="section bg-silver py-5" id="cities-served">
   <div class="container">
     <div class="row justify-content-center mb-5 element-animate">
       <div class="col-md-8 text-center">
@@ -154,415 +193,289 @@
     <div class="row">
       <!-- City Cards -->
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Lahore</h5>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Islamabad</h5>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Rawalpindi</h5>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Faisalabad</h5>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Multan</h5>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Sialkot</h5>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Karachi</h5>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card border-0 shadow-lg text-center p-3 bg-light">
-          <i class="fas fa-city fa-3x text-primary mb-3"></i>
+        <div class="city-card">
           <h5 class="mb-0">Gujranwala</h5>
         </div>
       </div>
 
+      <div class="d-flex justify-content-center align-items-center" style="height: 15vh;">
+        <p class="mb-0"><a href="about.html" class="btn btn-primary">Read More</a></p>
+      </div>
+      
+      
+      
+      
     </div>
+  </div>
+</section>  
+
+<!-- CSS -->
+<style>
+  /* Full-width silver background */
+  .bg-silver {
+    background: #fafafa; /* Silver color */
+  }
+
+  /* City Box Styling */
+  .city-card {
+    background: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Hover Effect */
+  .city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Blue underline appearing on hover */
+  .city-card::after {
+    content: "";
+    width: 88%;
+    height: 1.5px;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    transition: background 0.3s ease-in-out;
+}
+
+
+  .city-card:hover::after {
+    background: #007bff;
+  }
+</style>
+
+
+<style>
+  /* Custom Styles */
+  .service-card {
+    background-color: white;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.3);
+  }
+
+  .service-card img {
+    max-width: 35%;
+    margin-top: 25px;
+    margin-bottom: 30px; /* Increased space between image and text */
+  }
+
+  .service-title {
+    font-size: 1.15rem; /* Slightly larger text */
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    margin-bottom: 5px; /* Small gap between title and Learn More */
+  }
+
+  .learn-more-link {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #023b74; /* Dark blue color */
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .learn-more-link:hover {
+    color: #0056b3; /* Slightly lighter blue on hover */
+  }
+</style>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="row justify-content-center mb-5 element-animate">
+      <div class="col-md-8 text-center">
+        <h2 class="text-uppercase heading border-bottom mb-4">Services Offered</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Service Cards - First Row -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/building.png" alt="Building Icon" class="img-fluid">
+          <h3 class="service-title">BUILDING INFORMATION MODELING</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/civil-engineering.png" alt="Structure Icon" class="img-fluid">
+          <h3 class="service-title">STRUCTURE DESIGN</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/sketch.png" alt="Architecture Icon" class="img-fluid">
+          <h3 class="service-title">ARCHITECTURE DESIGN</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/engineer.png" alt="Construction Supervision Icon" class="img-fluid">
+          <h3 class="service-title">PROJECT MANAGEMENT</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/assesment.png" alt="Monitoring & Assessment Icon" class="img-fluid">
+          <h3 class="service-title">HEALTH MONITORING & ASSESSMENT</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/home-renovation.png" alt="Retrofitting & Renovation Icon" class="img-fluid">
+          <h3 class="service-title">RETROFITTING & RENOVATION</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Row (Centered Cards) -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/search.png" alt="Testing Icon" class="img-fluid">
+          <h3 class="service-title">DESTRUCTIVE & NON-DESTRUCTIVE TESTING</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="service-card text-center p-4">
+          <img src="/img/budget.png" alt="Costing & Estimation Icon" class="img-fluid">
+          <h3 class="service-title">PROJECT COSTING & ESTIMATION</h3>
+          <a href="services.html" class="arrow-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<style>
+  .service-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Keeps cards uniform */
+  }
 
+  .service-card h3 {
+    font-size: 0.9rem;
+    min-height: 50px; /* Prevents inconsistent card heights */
+  }
 
-    <!-- SERVICES  -->
-    <section class="section" id="services">
-      <div class="container">
+  .service-card img {
+    max-width: 125px;
+    margin-bottom: 35px;
+  }
 
-        <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4">Services Offered</h2>
-          </div>
-        </div>
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
 
-        <div class="row mb-5">
+  .arrow-link {
+    display: inline-block;
+    color: #007bff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-building-1 icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">BUILDING</h3>
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>-->
-              </div>
-            </div>
-          </div>
+  .arrow-link:hover {
+    color: #0056b3;
+  }
+</style>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-blueprint icon"></span>
-
-              <div class="media-body">
-                <h3 class="mt-0 text-black">STRUCTURE</h3>
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-crane icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">ARCHITECTURE 
-
-                </h3>
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-building icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">CONSTRUCTION SUPERVISION
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-helmet icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">MONITORING & ASSESSMENT
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-engineer icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">COSTING & ESTIMATION
-                </h3>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- END row -->
-      </div>
-    </section>
-    <!-- END section -->
-
-<!--  GALLERY
-    
-    <section class="section border-t">
-      <div class="container">
-        <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4">Completed Works</h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>Abad Silver Dew</h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/projects/Abad%20Silver%20Dew%20(2).jpg" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>Abad Ikebana</h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/projects/IKEBANA%20DRON.jpg" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>George Kaitharan </h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/projects/kaitharan.jpg" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>ASSET Versatile</h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/projects/5%20copy.jpg" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>Independent villa project at Vaduthala Alappuzha Dt.</h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/recent/1.JPG" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>
-                Villa project at Maradu comprising 6 Villas
-              </h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/recent/2.png" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>
-                Hospital Building with  O.P, O.T, and furnished rooms.
-                B+G+3FLOORS
-              </h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/recent/3.jpg" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>
-                Residential Villa
-              </h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/recent/5.JPG" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-
-          <div class="col-md-4 element-animate">
-            <a href="projects.html" class="link-thumbnail">
-              <h3>
-                Abad Silver Meadows
-              </h3>
-              <span class="ion-plus icon"></span>
-              <img src="img/recent/6.jpg" alt="Image placeholder" class="img-gallery">
-            </a>
-          </div>
-          <p class="mb-0 mt-1 ml-2"><a href="projects.html" class="btn btn-primary">View More</a></p>
-        </div>
-      </div>
-    </section> -->
-
-<!--    <section class="section bg-light">-->
-<!--      <div class="container">-->
-<!--        <div class="row justify-content-center mb-5 element-animate">-->
-<!--          <div class="col-md-8 text-center mb-5">-->
-<!--            <h2 class="text-uppercase heading border-bottom mb-4">Our News</h2>-->
-<!--            <p class="mb-0 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="row element-animate">-->
-<!--          <div class="major-caousel js-carousel-1 owl-carousel">-->
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_1.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 8</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_2.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 2</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_3.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 5</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_1.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 7</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_2.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 1</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_3.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 4</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_1.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 12</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--              <div class="media d-block media-custom text-left">-->
-<!--                <img src="img/work_thumb_2.jpg" alt="Image Placeholder" class="img-fluid">-->
-<!--                <div class="media-body">-->
-<!--                  <span class="meta-post">December 2, 2017</span>-->
-<!--                  <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--                  <p class="clearfix">-->
-<!--                    <a href="#" class="float-left">Read more</a>-->
-<!--                    <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 14</a>-->
-<!--                  </p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--          </div>-->
-<!--          &lt;!&ndash; END slider &ndash;&gt;-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-<!--    &lt;!&ndash; END section &ndash;&gt;-->
-<!--    -->
-<!--    <section class="section">-->
-<!--      <div class="container">-->
-<!--        <div class="row justify-content-center mb-5 element-animate">-->
-<!--          <div class="col-md-8 text-center mb-5">-->
-<!--            <h2 class="text-uppercase heading border-bottom mb-4">Happy Customer Says</h2>-->
-<!--            <p class="mb-0 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="row">-->
-<!--          <div class="col-md-6 element-animate">-->
-<!--            <div class="media d-block media-testimonial text-center">-->
-<!--              <img src="img/person_1.jpg" alt="Image placeholder" class="img-fluid mb-3">-->
-<!--              <p>Jane Doe, <a href="#">XYZ Inc.</a></p>-->
-<!--              <div class="media-body">-->
-<!--                <blockquote>-->
-<!--                  <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>  -->
-<!--                </blockquote>-->
-
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div class="col-md-6 element-animate">-->
-<!--            <div class="media d-block media-testimonial text-center">-->
-<!--              <img src="img/person_3.jpg" alt="Image placeholder" class="img-fluid mb-3">-->
-<!--              <p>John Doe, <a href="#">XYZ Inc.</a></p>-->
-<!--              <div class="media-body">-->
-<!--                <blockquote>-->
-<!--                  <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>  -->
-<!--                </blockquote>-->
-
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
 
     <!-- END section -->
   <footer id="footerContainer"></footer>
