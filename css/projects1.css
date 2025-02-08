@@ -197,3 +197,138 @@
         font-size: 0.85rem;
     }
 }
+
+/* Add these new styles to the existing CSS */
+
+/* Structural Project Cards */
+.structural-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.structural-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+}
+
+.structural-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.structural-title {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 0;
+}
+
+.structural-year {
+    background: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.structural-details {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Animation for cards */
+.project-card,
+.structural-card {
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced filter buttons */
+.projects-filter {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    margin: 2rem auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    background: white;
+    color: #1a1a1a;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.filter-btn:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: #007bff;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+/* Structural projects section */
+.structural-section {
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+
+.structural-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .structural-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-filter {
+        padding: 0.75rem;
+        border-radius: 15px;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
