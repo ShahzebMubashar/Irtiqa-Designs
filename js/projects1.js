@@ -1,35 +1,24 @@
+// Update the filtering logic to handle multiple categories
 document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll(".filter-btn")
-    const projectCards = document.querySelectorAll(".project-card")
+    const projects = document.querySelectorAll(".project-card")
 
     filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            const filter = button.getAttribute("data-filter")
-            console.log("Filter clicked:", filter)
+            const filterValue = button.getAttribute("data-filter")
 
-            // Remove active class from all buttons
             filterButtons.forEach((btn) => btn.classList.remove("active"))
-
-            // Add active class to clicked button
             button.classList.add("active")
 
-            projectCards.forEach((card) => {
-                const category = card.getAttribute("data-category")
-                console.log("Card category:", category)
-
-                if (filter === "all" || category === filter) {
-                    card.style.display = ""
-                    console.log("Showing card:", card)
+            projects.forEach((project) => {
+                const categories = project.getAttribute("data-category").split(" ")
+                if (filterValue === "all" || categories.includes(filterValue.toLowerCase())) {
+                    project.style.display = "block"
                 } else {
-                    card.style.display = "none"
-                    console.log("Hiding card:", card)
+                    project.style.display = "none"
                 }
             })
         })
     })
-
-    // Log initial state
-    // console.log("Total filter buttons:", filterButtons.length)
-    // console.log("Total project cards:", projectCards.length)
 })
 

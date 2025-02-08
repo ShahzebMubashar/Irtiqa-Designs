@@ -160,3 +160,40 @@
         font-size: 2rem;
     }
 }
+
+/* Add to existing CSS */
+.filter-btn[data-filter="structural"] {
+    /* Maintain consistent styling with other filter buttons */
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn[data-filter="structural"]:hover,
+.filter-btn[data-filter="structural"].active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Ensure proper spacing for additional category */
+.projects-filter {
+    gap: 12px;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .projects-filter {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
