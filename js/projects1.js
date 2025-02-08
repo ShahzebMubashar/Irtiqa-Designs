@@ -22,38 +22,39 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-// Enhanced filtering with animations
+// Update the filtering logic
 document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll(".filter-btn")
-    const projects = document.querySelectorAll(".project-card, .structural-card")
+    const projects = document.querySelectorAll(".project-card")
+    let delay = 0
+
+    function filterProjects(category) {
+        delay = 0
+        projects.forEach((project) => {
+            const categories = project.getAttribute("data-category").split(" ")
+            project.style.animation = "none"
+            project.offsetHeight // Trigger reflow
+
+            if (category === "all" || categories.includes(category)) {
+                project.style.display = "block"
+                project.style.animation = `fadeInUp 0.6s ease-out ${delay}s forwards`
+                delay += 0.1
+            } else {
+                project.style.display = "none"
+            }
+        })
+    }
 
     filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
             const filterValue = button.getAttribute("data-filter")
-
-            // Update active button
             filterButtons.forEach((btn) => btn.classList.remove("active"))
             button.classList.add("active")
-
-            // Filter projects with animation
-            projects.forEach((project) => {
-                const categories = project.getAttribute("data-category").split(" ")
-
-                project.style.animation = "none"
-                project.offsetHeight // Trigger reflow
-
-                if (filterValue === "all" || categories.includes(filterValue)) {
-                    project.style.display = "block"
-                    project.style.animation = "fadeInUp 0.6s ease-out forwards"
-                } else {
-                    project.style.display = "none"
-                }
-            })
+            filterProjects(filterValue)
         })
     })
 
     // Initial animation
-    projects.forEach((project, index) => {
-        project.style.animationDelay = `${index * 0.1}s`
-    })
+    filterProjects("all")
 })
+
