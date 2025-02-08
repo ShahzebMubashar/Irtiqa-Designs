@@ -162,18 +162,7 @@
 }
 
 /* Add to existing CSS */
-.filter-btn[data-filter="structural"] {
-    /* Maintain consistent styling with other filter buttons */
-    padding: 10px 20px;
-    border: none;
-    background-color: #fff;
-    color: #007bff;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+
 
 .filter-btn[data-filter="structural"]:hover,
 .filter-btn[data-filter="structural"].active {
