@@ -105,18 +105,17 @@
 
   <!-- Project Counter Section -->
   <section class="section" id="projects">
-    <div class="container">
-      <div class="row justify-content-center mb-5 element-animate">
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center mb-5 element-animate gx-0">
         <div class="col-md-8 text-center">
           <h2 class="text-uppercase heading border-bottom mb-4">Project Counter</h2>
         </div>
       </div>
 
-      <div class="row text-center">
-        <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-          <div class="media d-block media-feature text-center p-4 custom-box">
-            <img src="/img/total.png" alt="Project Icon" class="img-fluid custom-icon">
-            <!-- Replaced icon with image -->
+      <div class="row justify-content-center gx-0">
+        <div class="col-lg-3 col-md-5 col-12 mb-3 element-animate custom-card"> <!-- Decreased width for desktop -->
+          <div class="media d-block media-feature text-center p-4 custom-box shadow rounded-3">
+            <img src="/img/total.png" alt="Project Icon" class="img-fluid custom-icon mb-3">
             <div class="media-body">
               <h2 id="total-projects" class="display-4 fw-bold counter text-primary custom-number" data-target="4000">
                 3700+</h2>
@@ -124,10 +123,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-          <div class="media d-block media-feature text-center p-4 custom-box">
-            <img src="/img/residential.png" alt="Project Icon" class="img-fluid custom-icon">
-            <!-- Replaced icon with image -->
+
+        <div class="col-lg-3 col-md-5 col-12 mb-3 element-animate custom-card"> <!-- Decreased width for desktop -->
+          <div class="media d-block media-feature text-center p-4 custom-box shadow rounded-3">
+            <img src="/img/residential.png" alt="Project Icon" class="img-fluid custom-icon mb-3">
             <div class="media-body">
               <h2 id="residential" class="display-4 fw-bold counter text-primary custom-number" data-target="2300">2000+
               </h2>
@@ -135,10 +134,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-          <div class="media d-block media-feature text-center p-4 custom-box">
-            <img src="/img/commercial.png" alt="Project Icon" class="img-fluid custom-icon">
-            <!-- Replaced icon with image -->
+
+        <div class="col-lg-3 col-md-5 col-12 mb-3 element-animate custom-card"> <!-- Decreased width for desktop -->
+          <div class="media d-block media-feature text-center p-4 custom-box shadow rounded-3">
+            <img src="/img/commercial.png" alt="Project Icon" class="img-fluid custom-icon mb-3">
             <div class="media-body">
               <h2 id="commercial" class="display-4 fw-bold counter text-primary custom-number" data-target="1700">1400+
               </h2>
@@ -150,40 +149,53 @@
     </div>
   </section>
 
+  <!-- Custom CSS -->
   <style>
+    @media (max-width: 576px) {
+      .custom-card {
+        padding: 10px !important;
+        margin: 15px !important;
+      }
+
+      .custom-box {
+        border-radius: 15px !important;
+      }
+
+      .custom-icon {
+        max-width: 80px !important;
+      }
+    }
+
     /* Custom Styles */
     .custom-box {
       background-color: white;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
       border-radius: 15px;
     }
 
-    /* To ensure a good effect on hover */
     .custom-box:hover {
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2);
     }
 
-    /* Custom size for image */
     .custom-icon {
       max-width: 30%;
       margin-top: 20px;
       margin-bottom: 20px;
     }
 
-    /* Custom size for the numbers */
     .custom-number {
-      font-size: 3.5rem;
+      font-size: 3.0rem;
       margin-top: 10px;
       margin-bottom: 10px;
     }
 
-    /* Custom size for the text */
     .custom-text {
       font-size: 1.25rem;
       margin-top: 10px;
       margin-bottom: 10px;
     }
   </style>
+
 
   <!-- Cities Served Section -->
   <section class="section bg-silver py-5" id="cities-served">
@@ -350,142 +362,144 @@
     }
   </style>
 
-<!-- SERVICES -->
-<section class="section" id="services">
-  <div class="container">
-    <div class="row justify-content-center mb-5 element-animate">
-      <div class="col-md-8 text-center">
-        <h2 class="text-uppercase heading border-bottom mb-4">Services Offered</h2>
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center">
+          <h2 class="text-uppercase heading border-bottom mb-4">Services Offered</h2>
+        </div>
       </div>
+
+      <!-- First Row -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/sketch.png" alt="Architecture Icon" class="img-fluid">
+            <h3 class="service-title">ARCHITECTURE DESIGN</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/civil-engineering.png" alt="Structure Icon" class="img-fluid">
+            <h3 class="service-title">STRUCTURE DESIGN</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/assesment.png" alt="Monitoring & Assessment Icon" class="img-fluid">
+            <h3 class="service-title">HEALTH MONITORING & ASSESSMENT</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/renovation.png" alt="Retrofitting & Renovation Icon" class="img-fluid">
+            <h3 class="service-title">RETROFITTING & RENOVATION</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/engineer.png" alt="Construction Supervision Icon" class="img-fluid">
+            <h3 class="service-title">PROJECT MANAGEMENT</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/budget.png" alt="Costing & Estimation Icon" class="img-fluid">
+            <h3 class="service-title">PROJECT COSTING & ESTIMATION</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Row (Centered Cards) -->
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/building.png" alt="Building Icon" class="img-fluid">
+            <h3 class="service-title">BUILDING INFORMATION MODELING</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/search.png" alt="Testing Icon" class="img-fluid">
+            <h3 class="service-title">DESTRUCTIVE & NON-DESTRUCTIVE TESTING</h3>
+            <a href="services.html" class="arrow-link">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <!-- First Row -->
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/sketch.png" alt="Architecture Icon" class="img-fluid">
-          <h3 class="service-title">ARCHITECTURE DESIGN</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
+  <style>
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 11px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      height: 100%;
+      /* Keeps cards uniform */
+    }
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/civil-engineering.png" alt="Structure Icon" class="img-fluid">
-          <h3 class="service-title">STRUCTURE DESIGN</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
+    .service-card h3 {
+      font-size: 0.9rem;
+      min-height: 50px;
+      /* Prevents inconsistent card heights */
+    }
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/assesment.png" alt="Monitoring & Assessment Icon" class="img-fluid">
-          <h3 class="service-title">HEALTH MONITORING & ASSESSMENT</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    .service-card img {
+      max-width: 125px;
+      margin-bottom: 35px;
+    }
 
-    <!-- Second Row -->
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/renovation.png" alt="Retrofitting & Renovation Icon" class="img-fluid">
-          <h3 class="service-title">RETROFITTING & RENOVATION</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/engineer.png" alt="Construction Supervision Icon" class="img-fluid">
-          <h3 class="service-title">PROJECT MANAGEMENT</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
+    .arrow-link {
+      display: inline-block;
+      color: #007bff;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/budget.png" alt="Costing & Estimation Icon" class="img-fluid">
-          <h3 class="service-title">PROJECT COSTING & ESTIMATION</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Third Row (Centered Cards) -->
-    <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/building.png" alt="Building Icon" class="img-fluid">
-          <h3 class="service-title">BUILDING INFORMATION MODELING</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="service-card text-center p-4">
-          <img src="/img/search.png" alt="Testing Icon" class="img-fluid">
-          <h3 class="service-title">DESTRUCTIVE & NON-DESTRUCTIVE TESTING</h3>
-          <a href="services.html" class="arrow-link">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<style>
-  .service-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    height: 100%; /* Keeps cards uniform */
-  }
-
-  .service-card h3 {
-    font-size: 0.9rem;
-    min-height: 50px; /* Prevents inconsistent card heights */
-  }
-
-  .service-card img {
-    max-width: 125px;
-    margin-bottom: 35px;
-  }
-
-  .service-card:hover {
-    transform: translateY(-5px);
-  }
-
-  .arrow-link {
-    display: inline-block;
-    color: #007bff;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .arrow-link:hover {
-    color: #0056b3;
-  }
-</style>
+    .arrow-link:hover {
+      color: #0056b3;
+    }
+  </style>
 
 
 
