@@ -1,0 +1,238 @@
+/* Project Counter Section */
+.project-counter-section {
+    padding: 60px 0;
+}
+
+.counter-heading {
+    margin-bottom: 40px;
+}
+
+.counter-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 1px;
+}
+
+/* Counter Styling */
+.counter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.counter-box {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.counter-value {
+    font-size: 45px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.counter-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .counter-wrapper {
+        flex-direction: column;
+        gap: 10px; /* Reduce space on smaller screens */
+    }
+
+    .counter-box {
+        padding: 17px;
+    }
+
+    
+.counter-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 1px;
+}
+
+    .counter-value {
+        font-size: 42px;
+    }
+
+    .counter-label {
+        font-size: 17px;
+    }
+}
+  
+  /* Cities Carousel Styles */
+.cities-section {
+    background-color: #FAFAFA;
+    padding: 60px 0;
+  }
+  
+  .highlight-text {
+    color: #007bff;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+  }
+  
+  .carousel {
+    display: flex;
+    margin-top: 30px;
+    gap: 45px;
+    animation: scroll 10s linear infinite;
+    white-space: nowrap;
+  }
+  
+  .carousel-card {
+    width: 230px;
+    height: 275px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+  }
+  
+  .city-name {
+    height: 12%;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-calc(310px * 5)); }
+
+  }
+  
+  .carousel:hover {
+    animation-play-state: paused;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-card {
+        margin-left: 95px; /* Adds spacing to the left */
+    }
+}
+
+
+/* SERVICES SECTION */
+.service-card {
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.service-card:hover {
+    background: #fff;
+    border-color: #ddd;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+
+.highlight-text {
+    color: #007bff;
+  }
+
+.service-card h3 {
+    font-size: 0.9rem;
+    min-height: 25px;
+}  
+
+.service-card img {
+    max-width: 125px;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    color: grey;
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+.arrow-link {
+    display: inline-block;
+    color: #01448c;
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.arrow-link:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+
+    .service-card {
+        background: transparent;
+        border: 2px solid transparent;
+        border-radius: 14px;
+        box-shadow: none;
+        transition: all 0.3s ease-in-out;
+        height: 100%;
+        width: 115%;
+        margin-left: -12px;
+    }
+    
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(13, 13, 13);
+    margin-top: 20px;
+    min-height: 25px;
+}
+
+.service-card img {
+    max-width: 140px;
+    margin-bottom: 20px;
+}
+
+.smaller-devices img  {
+    max-width: 152px;
+}
+
+.service-description {
+    color: grey;
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+.arrow-link {
+    display: inline-block;
+    color: #01448c;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+}
