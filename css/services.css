@@ -1,0 +1,142 @@
+/* General Styles */
+.service-section {
+    padding: 50px 0;
+}
+
+/* Alternating Background Colors */
+.service-section:nth-child(odd) {
+    background-color: #fafafa; /* Light background for odd sections */
+}
+
+.service-section:nth-child(even) {
+    background-color: #ffffff; /* White background for even sections */
+}
+
+
+.service-img-even {
+    max-width: 340px;
+    border-radius: 13px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 110px;
+}
+
+.service-img-odd {
+    max-width: 340px;
+    border-radius: 13px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-title-even {
+    font-size: 2.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.service-title-odd {
+    font-size: 2.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.col-md-7.offset-md-1.text-center.text-md-start.px-3.px-md-4 {
+    
+    margin-left: -10px;
+}
+
+.service-description {
+    font-size: 1.0rem;
+    line-height: 1.8;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+
+.feature-value{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0;
+}
+
+.feature-title {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 7px;
+    margin-top: 6px;
+}
+
+.fa-layer-group, .fa-ruler-combined {
+    font-size: 1.4rem; 
+    color: #6c757d;
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 767.98px) {
+
+    .service-img-even {
+        max-width: 255px;
+        margin-left: 10px;
+    }
+
+    .service-img-odd{
+        max-width: 255px;
+    }
+
+    .service-title-even {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+    .service-title-odd {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+        line-height: 1.8;
+        color: #6c757d;
+        margin-bottom: 30px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    
+    .fa-layer-group, .fa-ruler-combined {
+        font-size: 1.4rem; 
+        color: #6c757d;
+    }
+
+    .feature-title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+        margin-top: 7px;
+    }
+    
+    .feature-value {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 0;
+    }
+    
+    .scale{
+        font-size: 1.2rem;
+    }
+
+}

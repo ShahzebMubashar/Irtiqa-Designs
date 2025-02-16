@@ -24,6 +24,7 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
 
     <script>
       // Fetch the header HTML file
@@ -46,6 +47,7 @@
     </script>
 
   </head>
+  
   <body>
 
   <header id="headerContainer"></header>
@@ -66,21 +68,13 @@
       </div>
     </section>
     
-   <!-- OUR MISSION -->
-   <section class="border-t">
-    <div class="container">
-      <div class="row justify-content-center mb-5 element-animate">
-        <div class="col-lg-12 mb-5">
-          <h2 class="text-uppercase heading border-bottom mb-4" style="text-align: center; margin-top: 40px;">Mission</h2>
-          <p class="mb-0 lead">
-            Our mission is to revolutionize the world of construction by integrating smart solutions, sustainable practices, 
-            and modern engineering. We strive to enhance efficiency, minimize environmental impact, and deliver projects that inspire progress. 
-            By embracing innovation and collaboration, we aim to reshape the industry and build a better tomorrow.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+   <!-- BUTTONS -->
+   <div class="projects-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="founders">Co-Founders</button>
+    <button class="filter-btn" data-filter="senior">Senior Exe.</button>
+    <button class="filter-btn" data-filter="junior">Junior Exe.</button>
+</div>
   
  <!-- FOUNDING TEAM -->
 
@@ -88,159 +82,142 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<section class="container-fluid" style="background-color: #FAFAFA; padding: 30px 0;">
-  <h2 class="text-uppercase heading border-bottom mb-4" style="text-align: center; margin-top: 40px;">Senior Executive</h2>
+<section class="container-fluid founders">
+  <h2 class="text-uppercase heading border-bottom mb-4 text-center">Co-Founder</h2>
 
   <div class="row justify-content-center text-center">
-      <!-- First Co-Founder -->
-      <div class="col-md-5 mb-5">
-          <img src="/img/work_thumb_3.jpg" class="rounded-circle mb-4" alt="Co-Founder 1" width="200" height="200" style="box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);">
-          <h3 class="fw-bold text-dark" style="margin-top: 20px;">Engr. Ali Raza Khalid</h3>
-          <p class="text-muted"  > Co-Founder </p>
-          <span class="d-block" style="font-style: italic; color: #333; margin-top: 20px;">
-              "A short, inspiring quote from the co-founder that defines their vision and leadership.
-               You can write multiple lines here and press enter to continue the quote."
-          </span>
-          <div class="d-flex justify-content-center gap-4">
-              <a href="#" class="social-icon"><i class="fab fa-facebook fa-lg text-secondary"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram fa-lg text-secondary"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin fa-lg text-secondary"></i></a>
-          </div>
+    <!-- First Co-Founder -->
+    <div class="col-md-5 mb-5">
+      <img src="/img/Ali Raza profile.png" class="founder-img" alt="Co-Founder 1">
+      <h3 class="founder-name">Engr. Ali Raza Khalid (P.E)</h3>
+      <p class="founder-role">Managing Executive</p>
+      <span class="founder-quote">
+        "Our Co-Founder and Managing Executive, a structural engineer <br> from NUST, envisions Irtiqa Design
+        as a hub of innovation and excellence."
+      </span>
+      <div class="d-flex justify-content-center mt-4">
+        <a href="#" class="visit-profile">Visit Profile</a>
       </div>
+    </div>
 
-      <!-- Second Co-Founder -->
-      <div class="col-md-5 mb-5">
-          <img src="/img/work_thumb_3.jpg" class="rounded-circle mb-4" alt="Co-Founder 2" width="200" height="200" style="box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);">
-          <h3 class="fw-bold text-dark" style="margin-top: 20px;">Engr. M. Haris Hameed</h3>
-          <p class="text-muted">Co-Founder</p>
-          <span class="d-block" style="font-style: italic; color: #333; margin-top: 20px;">
-              "A meaningful quote from the second co-founder reflecting their passion and contribution.
-               You can write multiple lines here and press enter to continue the quote."
-          </span>
-          <div class="d-flex justify-content-center gap-4">
-              <a href="#" class="social-icon"><i class="fab fa-facebook fa-lg text-secondary"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram fa-lg text-secondary"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin fa-lg text-secondary"></i></a>
-          </div>
+    <!-- Second Co-Founder -->
+    <div class="col-md-5 mb-5">
+      <img src="/img/Ali Raza profile.png" class="founder-img" alt="Co-Founder 2">
+      <h3 class="founder-name">Engr. Ali Raza Khalid (P.E)</h3>
+      <p class="founder-role">Managing Executive</p>
+      <span class="founder-quote">
+        "Our Co-Founder and Managing Executive, a structural engineer <br> from NUST, envisions Irtiqa Design
+        as a hub of innovation and excellence."
+      </span>
+      <div class="d-flex justify-content-center mt-4">
+        <a href="#" class="visit-profile">Visit Profile</a>
       </div>
-  </div>
-
-  <!-- Style for hover effect on social icons -->
-  <style>
-      .social-icon i {
-        margin-top: 50px;
-          transition: color 0.3s ease;
-      }
-
-      .social-icon:hover i {
-          color: #007bff;
-      }
-  </style>
-</section>
-
-<!-- JUNIOR EXECUTIVE -->
-<section class="border-t py-5">
-  <div class="container">
-      <h2 class="text-uppercase heading border-bottom text-center mb-5" style="font-size: 2rem;">
-          Junior Executive
-      </h2>
-
-      <div class="row justify-content-center gx-3 gy-4"> <!-- Adjusted spacing -->
-          <!-- First Junior Executive Card -->
-          <div class="col-12 col-sm-6 col-md-4">
-              <div class="card border-0 rounded-3" 
-                   style="width: 100%; max-width: 350px; height: 300px; display: flex; align-items: center; justify-content: center; margin: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
-                  <div class="card-body text-center py-4">
-                      <img src="/img/work_thumb_2.jpg" alt="Junior Executive 1" class="img-fluid rounded-circle border" 
-                           style="width: 135px; height: 135px; object-fit: cover; border: 4px solid #f0f0f0; margin-bottom: 15px;">
-                      <h5 class="fw-bold text-dark mb-1">Umair Choudhary</h5>
-                      <p class="text-muted mb-0" style="font-size: 1rem;">Office Manager</p>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Second Junior Executive Card -->
-          <div class="col-12 col-sm-6 col-md-4">
-              <div class="card border-0 rounded-3" 
-                   style="width: 100%; max-width: 350px; height: 300px; display: flex; align-items: center; justify-content: center; margin: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
-                  <div class="card-body text-center py-4">
-                      <img src="/img/work_thumb_2.jpg" alt="Junior Executive 2" class="img-fluid rounded-circle border" 
-                           style="width: 135px; height: 135px; object-fit: cover; border: 4px solid #f0f0f0; margin-bottom: 15px;">
-                      <h5 class="fw-bold text-dark mb-1">Hamza Last Name</h5>
-                      <p class="text-muted mb-0" style="font-size: 1rem;">Site Engineer</p>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Third Junior Executive Card -->
-          <div class="col-12 col-sm-6 col-md-4">
-              <div class="card border-0 rounded-3" 
-                   style="width: 100%; max-width: 350px; height: 300px; display: flex; align-items: center; justify-content: center; margin: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
-                  <div class="card-body text-center py-4">
-                      <img src="/img/work_thumb_2.jpg" alt="Junior Executive 3" class="img-fluid rounded-circle border" 
-                           style="width: 135px; height: 135px; object-fit: cover; border: 4px solid #f0f0f0; margin-bottom: 15px;">
-                      <h5 class="fw-bold text-dark mb-1">Hamza Last Name</h5>
-                      <p class="text-muted mb-0" style="font-size: 1rem;">Site Engineer</p>
-                  </div>
-              </div>
-          </div>
-
-      </div>
+    </div>
   </div>
 </section>
 
 
-
-<!-- DRAFTSMEN SECTION -->
-<section class="border-t" style="background-color: #fafafa; padding: 50px 0;">
+<!-- Senior EXECUTIVE -->
+<section class="py-5 senior-executive">
   <div class="container">
-    <h2 class="text-uppercase heading border-bottom text-center mb-5" style="font-size: 2rem;">
-      Draftmen Team
+    <h2 class="text-uppercase heading border-bottom text-center mb-5 senior-heading">
+      Senior Executive
     </h2>
 
-    <div class="row justify-content-center gx-3 gy-4"> <!-- Adjusted spacing -->
-      <!-- Draftsmen Cards -->
+    <div class="row justify-content-center gx-2 gy-3">
+      <!-- First Senior Executive Card -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card senior-card">
+          <div class="card-body text-center">
+            <img src="/img/work_thumb_2.jpg" alt="Umair Choudhary" class="senior-img">
+            <h5 class="senior-name">Umair Choudhary</h5>
+            <p class="senior-role">Office Manager</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Senior Executive Card -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card senior-card">
+          <div class="card-body text-center">
+            <img src="/img/work_thumb_2.jpg" alt="Hamza Last Name" class="senior-img">
+            <h5 class="senior-name">Hamza Last Name</h5>
+            <p class="senior-role">Site Engineer</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Senior Executive Card -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card senior-card">
+          <div class="card-body text-center">
+            <img src="/img/work_thumb_2.jpg" alt="Hamza Last Name" class="senior-img">
+            <h5 class="senior-name">Hamza Last Name</h5>
+            <p class="senior-role">Site Engineer</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Junior Executive -->
+<section class="border-t" class="junior" style="background-color: #fafafa; padding: 50px 0;">
+  <div class="container">
+    <h2 class="text-uppercase heading border-bottom text-center mb-5" style="font-size: 2rem;">
+      Junior Executive
+    </h2>
+
+    <div class="row justify-content-center gx-3 gy-4">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card border-light rounded-2 d-flex flex-column align-items-center text-center p-3"
-             style="width: 100%; max-width: 250px; height: 270px; margin: auto; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);">
-          <img src="/img/work_thumb_2.jpg" class="img-fluid rounded-circle border"
-               style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #eaeaea; margin-top: 20px; margin-bottom: 20px;">
-          <h6 class="fw-bold text-dark">Ar. Hassan Raza</h6>
-          <p class="text-muted" style="font-size: 0.9rem;">Sr. Architect</p>
+        <div class="executive-card">
+          <img src="/img/hamza raaza.jpg" alt="Hamza Raza">
+          <h6>Hamza Raza</h6>
+          <p>Jr. Engineer Design</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card border-light rounded-2 d-flex flex-column align-items-center text-center p-3"
-             style="width: 100%; max-width: 250px; height: 270px; margin: auto; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);">
-          <img src="/img/work_thumb_2.jpg" class="img-fluid rounded-circle border"
-               style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #eaeaea; margin-top: 20px; margin-bottom: 20px;">
-          <h6 class="fw-bold text-dark">Usman Ashraf</h6>
-          <p class="text-muted" style="font-size: 0.9rem;">Project Engineer / QS</p>
+        <div class="executive-card">
+          <img src="/img/hamza raaza.jpg" alt="Hamza Raza">
+          <h6>Hamza Raza</h6>
+          <p>Jr. Engineer Design</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card border-light rounded-2 d-flex flex-column align-items-center text-center p-3"
-             style="width: 100%; max-width: 250px; height: 270px; margin: auto; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);">
-          <img src="/img/work_thumb_2.jpg" class="img-fluid rounded-circle border"
-               style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #eaeaea; margin-top: 20px; margin-bottom: 20px;">
-          <h6 class="fw-bold text-dark">Hashir Naeem</h6>
-          <p class="text-muted" style="font-size: 0.9rem;">Interior Design Coordinator</p>
+        <div class="executive-card">
+          <img src="/img/hamza ali.jpg" alt="Hamza Ali">
+          <h6>Hamza Ali</h6>
+          <p>BiM Specialist</p>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card border-light rounded-2 d-flex flex-column align-items-center text-center p-3"
-             style="width: 100%; max-width: 250px; height: 270px; margin: auto; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);">
-          <img src="/img/work_thumb_2.jpg" class="img-fluid rounded-circle border"
-               style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #eaeaea; margin-top: 20px; margin-bottom: 20px;">
-          <h6 class="fw-bold text-dark">Hamza Ali</h6>
-          <p class="text-muted" style="font-size: 0.9rem;">BiM Specialist</p>
+        <div class="executive-card">
+          <img src="/img/hamza ali.jpg" alt="Hamza Ali">
+          <h6>Hamza Ali</h6>
+          <p>BiM Specialist</p>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- MAPS -->
+<section class="border-t" class="junior" style="padding: 50px 0;">
+  <div class="container">
+    <h2 class="text-uppercase heading border-bottom text-center mb-5" style="font-size: 2rem;">
+      OUR OFFICE 
+    </h2>
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0734565906563!2d74.38437237607563!3d31.46382705573431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905dd16ba25d7%3A0xbae9c86693ece994!2sIrtiqa%20Designs!5e0!3m2!1sen!2s!4v1707106433101!5m2!1sen!2s"
+    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 </section>
 
   <footer id="footerContainer"></footer>
@@ -254,4 +231,8 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
   </body>
+
+  <!-- button bar  -->
+  <script src="about.js"></script>
+
 </html>
