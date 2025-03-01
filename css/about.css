@@ -104,8 +104,8 @@
   
   .senior-card {
     width: 100%;
-    max-width: 280px;
-    height: 310px;
+    max-width: 300px;
+    height: 340px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@
     text-align: center;
     padding: 25px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 21px;
     border: 1px solid #ddd;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -125,12 +125,12 @@
   }
   
   .senior-img {
-    width: 115px;
-    height: 115px;
+    width: 205px;
+    height: 205px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #e0e0e0;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
   
   .senior-name {
