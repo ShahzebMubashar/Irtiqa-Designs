@@ -8,9 +8,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/city-carousel.css">
+
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.timepicker.css">
@@ -230,63 +232,6 @@
       </div>
     </div>
   </section>
-
-  <style>
-    .carousel-container {
-      overflow: hidden;
-      width: 100%;
-      position: relative;
-    }
-
-    .carousel {
-      display: flex;
-      width: 100%;
-    }
-
-    .carousel-track {
-      display: flex;
-      gap: 20px;
-      animation: scroll 30s linear infinite;
-    }
-
-    .carousel-card {
-      flex: 0 0 calc(100% / 10 - 20px);
-      text-align: center;
-      position: relative;
-      border-radius: 10px;
-      overflow: hidden;
-      height: 250px;
-    }
-
-    .carousel-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .city-name {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0, 0, 0, 0.7);
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-  </style>
 
 
   <script>
