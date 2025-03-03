@@ -1,13 +1,12 @@
+.inner-page {
+  margin-top: 5%;
+}
+
 .projects-filter {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
   padding: 1rem;
   border-radius: 50px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 20px;
-  z-index: 100;
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: 90%;
   display: flex;
   justify-content: center;
