@@ -8,19 +8,21 @@
 
   <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/city-carousel.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/topButton.css">
+
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
 
   <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
-  <!-- Theme Style -->
+
   <link rel="stylesheet" href="css/style.css">
 
   <script>
@@ -47,10 +49,20 @@
 
 <body>
 
+  <!--=============== LOADER ===============-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <div class="loader-wrapper">
+    <div class="loader">
+      <h1 class="loader-logo">Irtiqa Designs</h1>
+    </div>
+  </div>
+
+  <script src="js/loader.js"></script>
+
   <header id="headerContainer"></header>
 
   <section class="home-slider owl-carousel">
-    <div class="slider-item" style="background-image: url('img/slide\ e.jpg');">
+    <div class="slider-item" style="background-image: url('img/pic1.jpg');">
 
       <div class="container">
         <div class="row slider-text align-items-center justify-content-center text-center">
@@ -86,13 +98,13 @@
           <h2 class="heading heading border-bottom ">About <span class="highlight-text">Us</span></h2>
         </div>
         <p>
-          Founded in 2014 by two visionary engineers from NUST Islamabad, our construction consultancy 
-          has rapidly ascended to the pinnacle of Pakistan’s industry, setting new benchmarks for excellence 
-          and innovation. What began as a bold ambition has evolved into a powerhouse of engineering brilliance, 
+          Founded in 2014 by two visionary engineers from NUST Islamabad, our construction consultancy
+          has rapidly ascended to the pinnacle of Pakistan’s industry, setting new benchmarks for excellence
+          and innovation. What began as a bold ambition has evolved into a powerhouse of engineering brilliance,
           with a formidable presence across ten major cities.
         </p>
         <p>
-          With an unwavering commitment to precision, sustainability, and cutting-edge design, we transform 
+          With an unwavering commitment to precision, sustainability, and cutting-edge design, we transform
           blueprints into architectural masterpieces, redefining skylines and infrastructure with every project.
         </p>
         <a href="about.html" class="btn">Read More</a>
@@ -101,239 +113,257 @@
         <img src="img/office.jpg" alt="Office Image">
       </div>
     </div>
-  </section>    
-  
+  </section>
 
 
-<!-- Project Counter Section -->
-<section class="project-counter-section" id="projects">
-  <div class="container">
-    <div class="row justify-content-center counter-heading">
-      <div class="col-md-8 text-center">
-        <h2 class="text-uppercase fw-bold mb-2 heading border-bottom">
-          Project <span class="highlight-text">Counter</span>
-        </h2>
+
+  <!-- Project Counter Section -->
+  <section class="project-counter-section" id="projects">
+    <div class="container">
+      <div class="row justify-content-center counter-heading">
+        <div class="col-md-8 text-center">
+          <h2 class="text-uppercase fw-bold mb-2 heading border-bottom">
+            Project <span class="highlight-text">Counter</span>
+          </h2>
+        </div>
+      </div>
+
+
+      <div class="counter-wrapper">
+        <div class="counter-box">
+          <div class="counter-value">3800+</div>
+          <div class="counter-label">Total Projects</div>
+        </div>
+
+        <div class="counter-box">
+          <div class="counter-value">2175+</div>
+          <div class="counter-label">Residential</div>
+        </div>
+
+        <div class="counter-box">
+          <div class="counter-value">1350+</div>
+          <div class="counter-label">Commercial</div>
+        </div>
+
+        <div class="counter-box">
+          <div class="counter-value">425+</div>
+          <div class="counter-label">Other</div>
+        </div>
       </div>
     </div>
+  </section>
 
-
-    <div class="counter-wrapper">
-      <div class="counter-box">
-        <div class="counter-value">3800+</div>
-        <div class="counter-label">Total Projects</div>
-      </div>
-
-      <div class="counter-box">
-        <div class="counter-value">2175+</div>
-        <div class="counter-label">Residential</div>
-      </div>
-
-      <div class="counter-box">
-        <div class="counter-value">1350+</div>
-        <div class="counter-label">Commercial</div>
-      </div>
-
-      <div class="counter-box">
-        <div class="counter-value">425+</div>
-        <div class="counter-label">Other</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
       let counters = document.querySelectorAll(".counter-value");
       let section = document.querySelector(".project-counter-section");
       let hasAnimated = false; // Prevent re-triggering animation
-  
+
       function animateCounter(counter) {
-          let target = +counter.textContent.replace("+", ""); // Get number value
-          let duration = 3000; // 3 seconds
-          let startTime = null;
-  
-          function updateCounter(timestamp) {
-              if (!startTime) startTime = timestamp;
-              let progress = timestamp - startTime;
-              let value = Math.min(Math.floor((progress / duration) * target), target);
-              counter.textContent = value + "+";
-  
-              if (value < target) {
-                  requestAnimationFrame(updateCounter);
-              }
+        let target = +counter.textContent.replace("+", ""); // Get number value
+        let duration = 3000; // 3 seconds
+        let startTime = null;
+
+        function updateCounter(timestamp) {
+          if (!startTime) startTime = timestamp;
+          let progress = timestamp - startTime;
+          let value = Math.min(Math.floor((progress / duration) * target), target);
+          counter.textContent = value + "+";
+
+          if (value < target) {
+            requestAnimationFrame(updateCounter);
           }
-  
-          requestAnimationFrame(updateCounter);
+        }
+
+        requestAnimationFrame(updateCounter);
       }
-  
+
       // Intersection Observer to detect when section is in view
       let observer = new IntersectionObserver(
-          (entries) => {
-              if (entries[0].isIntersecting && !hasAnimated) {
-                  counters.forEach(counter => animateCounter(counter));
-                  hasAnimated = true; // Prevent multiple triggers
-              }
-          },
-          { threshold: 0.4 } // Start when 50% of section is visible
+        (entries) => {
+          if (entries[0].isIntersecting && !hasAnimated) {
+            counters.forEach(counter => animateCounter(counter));
+            hasAnimated = true; // Prevent multiple triggers
+          }
+        },
+        { threshold: 0.4 } // Start when 50% of section is visible
       );
-  
-      observer.observe(section);
-  });
-  </script>
-  
 
- <!-- Cities Carousel -->
-<section class="container-fluid cities-section">
-  <div class="container-fluid px-0">
-    <div class="row justify-content-center mb-4 element-animate gx-0">
-      <div class="col-md-8 text-center">
-        <h2 class="text-uppercase fw-bold mb-2 heading border-bottom">
-          Cities <span class="highlight-text">Served</span>
-        </h2>
+      observer.observe(section);
+    });
+  </script>
+
+  <!-- Cities Carousel -->
+  <section class="container-fluid cities-section">
+    <div class="container-fluid px-0">
+      <div class="row justify-content-center mb-4 element-animate gx-0">
+        <div class="col-md-8 text-center">
+          <h2 class="text-uppercase fw-bold mb-2 heading border-bottom">
+            Cities <span class="highlight-text">Served</span>
+          </h2>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="carousel-container">
-    <div class="carousel">
-      <div class="carousel-card"><img src="/img/cities/lahore.jpg" alt="Lahore"><div class="city-name">Lahore</div></div>
-      <div class="carousel-card"><img src="/img/cities/islamabad.jpg" alt="Islamabad"><div class="city-name">Islamabad</div></div>
-      <div class="carousel-card"><img src="/img/cities/karachii.jpg" alt="Karachi"><div class="city-name">Karachi</div></div>
-      <div class="carousel-card"><img src="/img/cities/rawalpindi.jpg" alt="Rawalpindi"><div class="city-name">Rawalpindi</div></div>
-      <div class="carousel-card"><img src="/img/cities/faisalabadd.jpg" alt="Faisalabad"><div class="city-name">Faisalabad</div></div>
-      <div class="carousel-card"><img src="/img/cities/multan.jpeg" alt="Multan"><div class="city-name">Multan</div></div>
-      <div class="carousel-card"><img src="/img/cities/sialkot.png" alt="Sialkot"><div class="city-name">Sialkot</div></div>
-      <div class="carousel-card"><img src="/img/cities/gujranwala.jpg" alt="Gujranwala"><div class="city-name">Gujranwala</div></div>
-      <div class="carousel-card"><img src="/img/cities/gwadar.avif" alt="Gwadar"><div class="city-name">Gwadar</div></div>
-      <div class="carousel-card"><img src="/img/cities/quetta.jpg" alt="Quetta"><div class="city-name">Quetta</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- Linking External CSS -->
-<link rel="stylesheet" href="/css/cities-carousel.css">
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const carousel = document.querySelector(".carousel");
-      const cardWidth = document.querySelector(".carousel-card").offsetWidth + 45; // Include gap
-      let isTransitioning = false;
-
-      function moveCarousel() {
-          if (isTransitioning) return;
-          isTransitioning = true;
-
-          // Apply smooth transition
-          carousel.style.transition = "transform 0.5s linear";
-          carousel.style.transform = `translateX(-${cardWidth}px)`;
-
-          setTimeout(() => {
-              // Move first card to the end without breaking the flow
-              carousel.appendChild(carousel.firstElementChild);
-
-              // Instantly reset position to prevent a double transition
-              carousel.style.transition = "none";
-              carousel.style.transform = "translateX(0)";
-              isTransitioning = false;
-          }, 500); // Match timeout with transition duration
-      }
-
-      setInterval(moveCarousel, 3000);
-  });
-</script>
-
-
- <!-- SERVICES -->
- <section class="section" id="services">
-  <div class="container">
-      <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-              <h2 class="text-uppercase heading border-bottom">Services <span class="highlight-text">Offered</span></h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-card"><img src="/img/cities/lahore.jpg" alt="Lahore">
+            <div class="city-name">Lahore</div>
           </div>
+          <div class="carousel-card"><img src="/img/cities/islamabad.jpg" alt="Islamabad">
+            <div class="city-name">Islamabad</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/karachi.jpg" alt="Karachi">
+            <div class="city-name">Karachi</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/rawalpindi.jpg" alt="Rawalpindi">
+            <div class="city-name">Rawalpindi</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/faisalabad.jpg" alt="Faisalabad">
+            <div class="city-name">Faisalabad</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/multan.jpeg" alt="Multan">
+            <div class="city-name">Multan</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/sialkot.png" alt="Sialkot">
+            <div class="city-name">Sialkot</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/gujranwala.jpg" alt="Gujranwala">
+            <div class="city-name">Gujranwala</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/gwadar.avif" alt="Gwadar">
+            <div class="city-name">Gwadar</div>
+          </div>
+          <div class="carousel-card"><img src="/img/cities/quetta.jpg" alt="Quetta">
+            <div class="city-name">Quetta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carouselTrack = document.querySelector(".carousel-track");
+      const cards = Array.from(carouselTrack.children);
+
+      // Clone first 4 cards to ensure smooth infinite scrolling
+      cards.slice(0, 4).forEach(card => {
+        const clone = card.cloneNode(true);
+        carouselTrack.appendChild(clone);
+      });
+    });
+  </script>
+
+
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center">
+          <h2 class="text-uppercase heading border-bottom">Services <span class="highlight-text">Offered</span></h2>
+        </div>
       </div>
 
       <!-- First Row -->
       <div class="row">
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4 ">
-                  <img src="/img/sketch.png" alt="Architecture Icon" class="img-fluid">
-                  <h3 class="service-title">ARCHITECTURE DESIGN</h3>
-                  <p class="service-description">Innovative and functional architectural solutions tailored to your needs.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4 ">
+            <img src="/img/sketch.png" alt="Architecture Icon" class="img-fluid">
+            <h3 class="service-title">ARCHITECTURE DESIGN</h3>
+            <p class="service-description">Innovative and functional architectural solutions tailored to your needs.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4  smaller-devices">
-                  <img src="/img/civil-engineering.png" alt="Structure Icon" class="img-fluid " >
-                  <h3 class="service-title">STRUCTURE DESIGN</h3>
-                  <p class="service-description">Robust and efficient structural designs for sustainable development.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4  smaller-devices">
+            <img src="/img/civil-engineering.png" alt="Structure Icon" class="img-fluid ">
+            <h3 class="service-title">STRUCTURE DESIGN</h3>
+            <p class="service-description">Robust and efficient structural designs for sustainable development.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4  smaller-devices">
-                  <img src="/img/assesment.png" alt="Monitoring & Assessment Icon" class="img-fluid ">
-                  <h3 class="service-title">HEALTH MONITORING & ASSESSMENT</h3>
-                  <p class="service-description">Comprehensive evaluation for the safety and longevity of structures.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4  smaller-devices">
+            <img src="/img/assesment.png" alt="Monitoring & Assessment Icon" class="img-fluid ">
+            <h3 class="service-title">HEALTH MONITORING & ASSESSMENT</h3>
+            <p class="service-description">Comprehensive evaluation for the safety and longevity of structures.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
       </div>
 
       <!-- Second Row -->
       <div class="row">
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4  smaller-devices">
-                  <img src="/img/renovation.png" alt="Retrofitting & Renovation Icon" class="img-fluid ">
-                  <h3 class="service-title">RETROFITTING & RENOVATION</h3>
-                  <p class="service-description">Enhancing existing structures for improved performance and aesthetics.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4  smaller-devices">
+            <img src="/img/renovation.png" alt="Retrofitting & Renovation Icon" class="img-fluid ">
+            <h3 class="service-title">RETROFITTING & RENOVATION</h3>
+            <p class="service-description">Enhancing existing structures for improved performance and aesthetics.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4  smaller-devices">
-                  <img src="/img/engineer.png" alt="Construction Supervision Icon" class="img-fluid ">
-                  <h3 class="service-title">PROJECT MANAGEMENT</h3>
-                  <p class="service-description">Expert project oversight ensuring timely and budget-friendly delivery.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4  smaller-devices">
+            <img src="/img/engineer.png" alt="Construction Supervision Icon" class="img-fluid ">
+            <h3 class="service-title">PROJECT MANAGEMENT</h3>
+            <p class="service-description">Expert project oversight ensuring timely and budget-friendly delivery.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4  smaller-devices">
-                  <img src="/img/budget.png" alt="Costing & Estimation Icon" class="img-fluid">
-                  <h3 class="service-title">PROJECT COSTING & ESTIMATION</h3>
-                  <p class="service-description">Accurate cost analysis for efficient project budgeting and planning.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4  smaller-devices">
+            <img src="/img/budget.png" alt="Costing & Estimation Icon" class="img-fluid">
+            <h3 class="service-title">PROJECT COSTING & ESTIMATION</h3>
+            <p class="service-description">Accurate cost analysis for efficient project budgeting and planning.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
       </div>
 
       <!-- Third Row (Centered Cards) -->
       <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4">
-                  <img src="/img/building.png" alt="Building Icon" class="img-fluid">
-                  <h3 class="service-title">BUILDING INFORMATION MODELING</h3>
-                  <p class="service-description">Advanced 3D modeling for enhanced building design and management.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/building.png" alt="Building Icon" class="img-fluid">
+            <h3 class="service-title">BUILDING INFORMATION MODELING</h3>
+            <p class="service-description">Advanced 3D modeling for enhanced building design and management.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="service-card text-center p-4">
-                  <img src="/img/search.png" alt="Testing Icon" class="img-fluid">
-                  <h3 class="service-title">DESTRUCTIVE & NON-DESTRUCTIVE TESTING</h3>
-                  <p class="service-description">Thorough testing methods to ensure material quality and integrity.</p>
-                  <a href="services.html" class="arrow-link">Learn More</a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="service-card text-center p-4">
+            <img src="/img/search.png" alt="Testing Icon" class="img-fluid">
+            <h3 class="service-title">DESTRUCTIVE & NON-DESTRUCTIVE TESTING</h3>
+            <p class="service-description">Thorough testing methods to ensure material quality and integrity.</p>
+            <a href="services.html" class="arrow-link">Learn More</a>
           </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+
+  <div id="myBtnContainer">
+    <svg class="progress-ring" width="90" height="90">
+      <circle class="progress-ring__circle" cx="45" cy="45" r="34"></circle>
+    </svg>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-rocket"></i>
+    </button>
   </div>
-</section>
+
+  <script src="/js/topButton.js"></script>
+
 
   <!-- END section -->
   <footer id="footerContainer"></footer>
@@ -350,6 +380,8 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 
 </body>
 
