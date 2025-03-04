@@ -25,23 +25,45 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script>
-        // Fetch the header HTML file
-        fetch('header.html')
-            .then(response => response.text())
-            .then(headerHtml => {
-                // Inject the header HTML into the header container
-                const headerContainer = document.getElementById('headerContainer');
-                headerContainer.innerHTML = headerHtml;
-            });
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(headerHtml => {
+                    const headerContainer = document.getElementById('headerContainer');
+                    if (headerContainer) {
+                        headerContainer.innerHTML = headerHtml;
+                        attachMenuToggle();
+                    } else {
+                        console.error("Header container not found!");
+                    }
+                })
+                .catch(error => console.error("Error loading header:", error));
 
-        // Fetch the footer HTML file
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(footerHtml => {
-                // Inject the footer HTML into the footer container
-                const footerContainer = document.getElementById('footerContainer');
-                footerContainer.innerHTML = footerHtml;
-            });
+            function attachMenuToggle() {
+                const menuToggle = document.querySelector(".menu-toggle");
+                const navLinks = document.querySelector(".nav-links");
+
+                if (menuToggle && navLinks) {
+                    menuToggle.addEventListener("click", function () {
+                        navLinks.classList.toggle("active");
+                        menuToggle.classList.toggle("active");
+                    });
+                } else {
+                    console.error("Menu elements not found!");
+                }
+            }
+
+
+            // Fetch the footer HTML file
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(footerHtml => {
+                    const footerContainer = document.getElementById('footerContainer');
+                    if (footerContainer) {
+                        footerContainer.innerHTML = footerHtml;
+                    }
+                });
+        });
     </script>
 </head>
 
@@ -370,7 +392,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>Commercial Mall, Kharian</h3>
@@ -382,7 +404,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>Meezan Bank Regional Office, Lahore</h3>
@@ -394,7 +416,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>Leather Tannery, Sialkot</h3>
@@ -406,7 +428,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>Al Najran Avenue, KSA</h3>
@@ -418,7 +440,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>HBK Mall, Peshawar</h3>
@@ -430,7 +452,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>Coca Cola Pakistan, Gujranwala</h3>
@@ -442,7 +464,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>Azgard 9, Ferozpur Road, Lahore</h3>
@@ -454,7 +476,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card" data-category="structural">
             <div class="project-info">
                 <h3>Prisim Energy, Sargodha</h3>
@@ -466,7 +488,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
 

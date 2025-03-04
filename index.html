@@ -34,9 +34,6 @@
           const headerContainer = document.getElementById('headerContainer');
           if (headerContainer) {
             headerContainer.innerHTML = headerHtml;
-            console.log("Header loaded successfully!");
-
-            // Now attach menu toggle script after elements exist
             attachMenuToggle();
           } else {
             console.error("Header container not found!");
@@ -53,7 +50,6 @@
             navLinks.classList.toggle("active");
             menuToggle.classList.toggle("active");
           });
-          console.log("Menu toggle script attached!");
         } else {
           console.error("Menu elements not found!");
         }
