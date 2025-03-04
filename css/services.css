@@ -1,15 +1,20 @@
-/* General Styles */
+.inner-page {
+    margin-top: 5%;
+}
+
 .service-section {
     padding: 90px 0;
 }
 
 /* Alternating Background Colors */
 .service-section:nth-child(odd) {
-    background-color: #fafafa; /* Light background for odd sections */
+    background-color: #fafafa;
+    /* Light background for odd sections */
 }
 
 .service-section:nth-child(even) {
-    background-color: #ffffff; /* White background for even sections */
+    background-color: #ffffff;
+    /* White background for even sections */
 }
 
 
@@ -47,7 +52,7 @@
 }
 
 .col-md-7.offset-md-1.text-center.text-md-start.px-3.px-md-4 {
-    
+
     margin-left: -10px;
 }
 
@@ -59,7 +64,7 @@
 }
 
 
-.feature-value{
+.feature-value {
     font-size: 1.8rem;
     font-weight: bold;
     color: #007bff;
@@ -74,8 +79,9 @@
     margin-top: 6px;
 }
 
-.fa-layer-group, .fa-ruler-combined {
-    font-size: 1.4rem; 
+.fa-layer-group,
+.fa-ruler-combined {
+    font-size: 1.4rem;
     color: #6c757d;
 }
 
@@ -88,7 +94,7 @@
         margin-left: 10px;
     }
 
-    .service-img-odd{
+    .service-img-odd {
         max-width: 255px;
     }
 
@@ -114,9 +120,10 @@
         margin-left: 35px;
         margin-right: 35px;
     }
-    
-    .fa-layer-group, .fa-ruler-combined {
-        font-size: 1.4rem; 
+
+    .fa-layer-group,
+    .fa-ruler-combined {
+        font-size: 1.4rem;
         color: #6c757d;
     }
 
@@ -127,15 +134,15 @@
         margin-bottom: 8px;
         margin-top: 7px;
     }
-    
+
     .feature-value {
         font-size: 1.3rem;
         font-weight: bold;
         color: #007bff;
         margin-bottom: 0;
     }
-    
-    .scale{
+
+    .scale {
         font-size: 1.2rem;
     }
 

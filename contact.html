@@ -14,8 +14,6 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
 
   <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
@@ -63,6 +61,40 @@
         });
     });
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      if (form) {
+        form.addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
+          };
+
+          try {
+            const response = await fetch("http://localhost:5000/submit-form", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+            alert(result.success || result.error);
+          } catch (error) {
+            alert("Error submitting form. Please try again.");
+          }
+        });
+      } else {
+        console.error("Form not found!");
+      }
+    });
+  </script>
+
 </head>
 
 <body>
