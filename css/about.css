@@ -51,6 +51,7 @@
   margin-top: 40px;
 }
 
+
 .founder-img {
   width: 250px;
   height: 250px;
@@ -238,6 +239,29 @@
   .contact-container {
     flex-direction: column;
   }
+
+.inner-page h1{
+ margin-top: 45px;
+ font-size: 40px;
+ margin-bottom: 1px;
+}
+
+.founder-quote {
+  font-size: 17.5px;
+  margin: 0 auto;
+  width: 84%;
+  text-align: center;
+}
+
+.founder-img {
+  width: 220px;
+  height: 220px;
+}
+
+.visit-profile {
+  margin-top: 5px;
+}
+
 
   .contact-info,
   .contact-form {
