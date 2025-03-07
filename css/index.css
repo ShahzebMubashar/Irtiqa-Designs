@@ -1,9 +1,72 @@
-/* Enable swipe on mobile */
-.owl-carousel {
-    touch-action: pan-y;
-    /* Allows smooth touch scrolling */
-}
-
+/* PIcture stuff on front */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 2;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 85%;
+  }
+  
+  .hero-title {
+    font-size: 2.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    max-width: 700px;
+    margin-bottom: 25px; /* Ensures spacing between text and button */
+  }
+  
+  .btn-primary {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+  
+  /* Ensure smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+      max-width: 85%;
+      margin-bottom: 25px; /* Ensures 25px space between text and button */
+    }
+  }
+  
 
 .about-section {
     background-color: #f8f9fa;
