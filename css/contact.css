@@ -6,6 +6,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
+    margin-top: 7%;
 }
 
 .contact-info {
@@ -115,10 +116,30 @@ button[type="submit"]:hover {
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
+        margin-top: 20%;
     }
 
     .contact-info,
     .contact-form {
         padding: 30px;
+        text-align: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+
+    /* Map Container */
+    .map-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
 }
