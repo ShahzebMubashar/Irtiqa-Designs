@@ -220,7 +220,10 @@ $(".home-slider").owlCarousel({
   smartSpeed: 1000,
   dots: true,
   nav: false,
-  touchDrag: true,  // Enable touch/swipe
-  mouseDrag: true   // Allow mouse swipe too
+  touchDrag: true,
+  mouseDrag: true,
+  pullDrag: true,  // Allows users to pull/swipe freely
+  freeDrag: true,  // Makes scrolling more natural
+  responsiveRefreshRate: 200
 });
 
