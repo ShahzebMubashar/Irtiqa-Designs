@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FAFAFA;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+    }
+
+    .dots-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .dot {
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+      border-radius: 10px;
+      background-color: #007bff;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    .dot:last-child {
+      margin-right: 0;
+    }
+
+    .dot:nth-child(1) {
+      animation-delay: -0.3s;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: -0.1s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.1s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.8);
+        background-color: #007bff;
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+      }
+
+      50% {
+        transform: scale(1.2);
+        background-color: #0056b3;
+        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+      }
+
+      100% {
+        transform: scale(0.8);
+        background-color: #007bff;
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+      }
+    }
+
+    .fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="dots-container">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <script>
+    // This script will be replaced by the main page's loader handling script
+    document.addEventListener('DOMContentLoaded', function() {
+      // This is just for demonstration - in your actual pages, you'll handle the transition differently
+      setTimeout(function() {
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          document.body.style.display = 'none';
+        }, 500);
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
