@@ -1,0 +1,287 @@
+#page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #FAFAFA;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  pointer-events: none;
+}
+
+#page-loader.hide {
+  opacity: 0;
+}
+
+.inner-page {
+  margin-top: 5%;
+}
+
+.projects-filter {
+  padding: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 1rem auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.social-icon i {
+  margin-top: 50px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+  color: #007bff;
+}
+
+.founders {
+  background-color: #FAFAFA;
+  padding: 30px 0;
+}
+
+.founders h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.founder-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.founder-name {
+  font-weight: bold;
+  color: #000;
+  margin-top: 20px;
+}
+
+.founder-role {
+  color: #6c757d;
+  /* Equivalent to Bootstrap's text-muted */
+}
+
+.founder-quote {
+  display: block;
+  font-style: italic;
+  color: #333;
+  margin-top: 20px;
+}
+
+.visit-profile {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 17px;
+}
+
+/* Senior Executive Section */
+.senior-heading {
+  font-size: 2rem;
+}
+
+.senior-executive {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.senior-card {
+  width: 100%;
+  max-width: 300px;
+  height: 340px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  background-color: white;
+  border-radius: 21px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.senior-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.senior-img {
+  width: 205px;
+  height: 205px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  margin-bottom: 25px;
+}
+
+.senior-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.senior-role {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.gx-2 {
+  --bs-gutter-x: 10px;
+}
+
+.gy-3 {
+  --bs-gutter-y: 14px;
+}
+
+/* JUNIOR EXECUTIVE STYLE */
+.executive-card {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 12px;
+}
+
+.executive-img {
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+  border: 4px solid #f0f0f0;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.executive-role {
+  font-size: 1rem;
+}
+
+.executive-card {
+  width: 100%;
+  max-width: 250px;
+  height: 270px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #FAFAFA;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Hide border and shadow initially */
+.executive-card {
+  border: 0;
+  box-shadow: none;
+}
+
+/* Show border and shadow on hover */
+.executive-card:hover {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.executive-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 3px solid #eaeaea;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.executive-card h6 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.executive-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* MAPS STYLE */
+.map-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+.inner-page h1{
+ margin-top: 45px;
+ font-size: 40px;
+ margin-bottom: 1px;
+}
+
+.founder-quote {
+  font-size: 17.5px;
+  margin: 0 auto;
+  width: 84%;
+  text-align: center;
+}
+
+.founder-img {
+  width: 220px;
+  height: 220px;
+}
+
+.visit-profile {
+  margin-top: 5px;
+}
+
+
+  .contact-info,
+  .contact-form {
+    padding: 30px;
+  }
+}
